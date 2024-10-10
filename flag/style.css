@@ -1,0 +1,71 @@
+:root {
+    --H:calc(100% * ((99 - (12 * pow(3, 0.5))) / 216));
+    --J:calc(418 - (108 * pow(3, 0.5)));
+    --C:calc(100% * (((32 * pow(3, 0.5)) / 3) / 216));
+}
+
+html {
+    background-color:black;
+}
+
+div {
+    position:absolute;
+    top:1vh;
+    left:5vh;
+    width:196vh;
+    height:98vh;
+    background-color:white;
+}
+
+#blue_trian1 {
+    position:absolute;
+    height:var(--H);
+    top:calc(100% * (9 / 216));
+    right:calc(100% * ((14 + var(--J) + 20) / 432));
+}
+
+#blue_trian2 {
+    transform:rotate(180deg);
+    position:absolute;
+    height:var(--H);
+    bottom:calc(100% * (9 + 91 + 16) / 216);
+    left:calc(100% * (16 / 432));
+}
+
+#blue_trian3 {
+    transform:scaleX(-1);
+    position:absolute;
+    height:var(--H);
+    top:calc(100% * ((9 + 91 + 16) / 216));
+    left:calc(100% * (16 / 432));
+}
+
+#blue_trian4 {
+    transform:scaleY(-1);
+    position:absolute;
+    height:var(--H);
+    right:calc(100% * ((14 + var(--J) + 20) / 432));
+    bottom:calc(100% * (9 / 216));
+}
+
+#red_white_triang1 {
+    position:absolute;
+    width:calc(100% * (var(--J) / 432));
+    top:calc(100% * (9 / 216));
+    right:calc(100% * (14 / 432));
+}
+
+#red_white_triang2 {
+    transform:scaleY(-1);
+    position:absolute;
+    width:calc(100% * (var(--J) / 432));
+    bottom: calc(100% * (9 / 216));
+    right:calc(100% * (14 / 432));
+}
+
+#arrow {
+    position:absolute;
+    height: var(--C);
+    right:calc(((100% * (36/432))) + 10px);
+    top:calc(100% * (9 + 91) / 216);
+}
