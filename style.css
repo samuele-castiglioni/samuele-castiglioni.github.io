@@ -11,9 +11,9 @@ html {
 div {
     position:absolute;
     top:1vh;
-    left:5vh;
-    width:196vh;
-    height:98vh;
+    left:13vh;
+    width:90vw;
+    height:45vw;
     background-color:white;
 }
 
@@ -66,6 +66,13 @@ div {
 #arrow {
     position:absolute;
     height: var(--C);
-    right:calc(((100% * (36/432))) + 10px);
+    right:calc(((100% * (36/432))) + 9px);
     top:calc(100% * (9 + 91) / 216);
+}
+
+p {
+    position:absolute;
+    font-size: 170%;
+    color: white;
+    top:90vh;
 }
